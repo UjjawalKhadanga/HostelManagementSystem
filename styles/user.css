@@ -1,0 +1,263 @@
+@import url('https://fonts.googleapis.com/css2?family=Jost:wght@500&display=swap');
+
+*{
+    box-sizing: border-box;
+    font-family: 'Jost', sans-serif;
+    color: rgb(255, 255, 255);
+    font-size: 1em;
+}
+body {
+    height: 100%;
+    margin: 0;
+    background: #267871;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #136a8a, #267871);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #136a8a, #267871); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */        
+    background-size: contain;
+    background-position: center;
+}
+html{
+    height: 100%;
+    
+}
+
+h1{
+    font-size: 3vw;
+    margin: 1vw;
+}
+
+a{
+    text-decoration: none;
+    cursor: pointer;
+}
+.navbar .menu__link{
+    cursor: pointer;
+}
+
+.menu__link{
+    width: 100%;
+    height: 100%;
+    line-height: 17px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.menu__item{
+    width: 25vw;
+    text-align: center;
+    border-right: 2px solid rgb(255, 255, 255);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.menu__item:hover{
+    background-color:  whitesmoke;
+    color: rgb(94, 94, 94) ;
+    transition: all 0.2s ease;    
+}
+.menu__item:hover .menu__link{
+    color: rgb(94, 94, 94) ;
+    transition: all 0.2s ease;    
+}
+.selected__item{
+    background-color: whitesmoke;
+    color: rgb(94, 94, 94) ;
+}
+.navbar ul{
+    list-style: none;
+    overflow-y: hidden;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content:center;
+}
+.navbar ul li{
+    font-weight: 800;
+    height: 3rem;
+    display: flex;
+    align-items: center;
+    margin-right: 0;
+}
+.header{
+    /* border-bottom: 2px solid rgb(0, 0, 0); */
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0.5rem;
+    background: #3b608a;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to left, #1d2a41, #3b608a);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #1d2a41, #3b608a); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */    
+    
+}
+.container{  
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+}
+
+
+.main{
+    padding: 0.6rem;
+    /* border: 2px solid black; */
+    display: flex;
+    justify-content: center;
+
+}
+
+button {
+    font-family: "Roboto", sans-serif;
+    text-transform: uppercase;
+    outline: 0;
+    background: rgb(255, 255, 255);
+    width: 100%;
+    border: 1.5px solid whitesmoke;
+    border-radius: 4px;
+    padding: 15px;
+    color: rgb(94, 94, 94);
+    font-size: 17px;
+    -webkit-transition: all 0.3 ease;
+    transition: all 0.3 ease;
+    cursor: pointer;
+}
+button:hover,.form button:active,.form button:focus {
+    background: #243b55;
+    color: rgb(255, 255, 255);
+    transition: 0.3s all ;
+}
+
+.navbar{
+    border-bottom: 2px solid rgb(255, 255, 255);
+}
+.book{
+    display: none;
+}
+.swap{
+    display: none;
+}
+.vacate{
+    display: none;
+}
+.HosAv{
+    display: none;
+}
+.active{
+    display: block;
+    
+}
+
+#logo{
+    width: 10vw;
+    border: 0.3vw solid rgb(221, 219, 219);
+    margin: 0;
+}
+
+label{
+    display: inline-block;
+    clear: left;
+    width: 15vw;
+    text-align: right;
+    line-height: 20px;
+}
+input ,select {
+    display: inline-block;
+    width: 30vw;
+    margin-left: 22px;
+    justify-content: center;
+    padding-left: 7px;
+    color: #243b55;
+    border: none;
+    outline: none;
+    border-radius: 10px;
+    background-color: whitesmoke;
+
+}
+
+select option{
+    color: #243b55;
+}
+form{
+    line-height: 50px;
+    padding: 20px;
+}
+
+.logout{
+    border: 2px solid rgb(255, 255, 255);
+    font-size: 2vw;
+    min-width: 10vw;
+    min-height: 3vw;
+    border-radius: 12px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.logout:hover {
+    background-color: #243b55;
+    transition: all 0.1s ease-in-out;
+}
+
+
+.main .book,.swap,.vacate,.HosAv{
+    box-shadow: rgba(0, 0, 0, 0.4) 0px 30px 90px;
+    min-width: 50vw;
+    overflow-y:auto;
+}
+
+/* Availability Table*/
+
+#table-section{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+table {
+    border-collapse: collapse;
+    margin: 25px 0;
+    font-size: 0.9em;
+    min-width: 95%;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.15);
+}
+table thead tr {
+    background-color: #243b55;
+    color: #ffffff;
+    text-align: left;
+}
+
+table th,
+table td {
+    padding: 12px 15px;
+}
+
+table tbody tr {
+    border-bottom: 1px solid #dddddd;
+}
+
+table tbody tr:last-of-type {
+    border-bottom: 2px solid #243b55;
+}
+
+
+/* Classes for row colour */
+.unavailable-row{
+    background-color: rgba(255, 0, 0, 0.61);
+}
+.available-row{
+    background-color: rgba(0, 128, 0, 0.5);
+}
+
+.user-info ul li{
+    list-style: none;
+    margin-right: 10px;
+    margin-left: 10px;
+    clear: right;
+    width: 200px;
+    text-shadow: rgba(0, 0, 0, 0.4) 0px 30px 90px;
+}
+.user-info ul{
+    display: flex;
+    flex-direction: column;
+    justify-content:right;
+    align-items:flex-end;
+}
